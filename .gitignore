@@ -1,18 +1,25 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# IDEs and editors
+/.idea
+/.vscode
 
-# Other files and folders
-.settings/
+# typedoc documentation
+/doc
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Autotest (configuration)
+/**/obs-autotest.properties
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Autotest (Java/Maven)
+/autotest/build
+/autotest/target
+/autotest/**/*.class
+/autotest/**/*.jar
+/autotest/**/*.log
+
+# Autotest (IDE)
+/autotest/.idea
+/autotest/**/*.iml
+
+
+/target
+*.iml
+*.log

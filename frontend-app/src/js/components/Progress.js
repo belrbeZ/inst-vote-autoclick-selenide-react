@@ -15,26 +15,20 @@ var ProgressElement = React.createClass({
       "gt-50": percent > 50
     });
     return (
-      < div;
-    className = "progress clearfix" >
-      < div;
-    className = {classes} >
-      < div;
-    className = "ppc-progress" >
-      < div;
-    className = "ppc-progress-fill";
-    ref = "progress" > < /div>
-      < /div>
-      < div;
-    className = "ppc-percents" >
-      < div;
-    className = "pcc-percents-wrapper" >
-      < span > {percent +'%'} < /span>
-      < /div>
-      < /div>
-      < /div>
-      < /div>;;
-  )
+      <div className="progress clearfix">
+        <div className={classes}>
+          <div className="ppc-progress">
+            <div className="ppc-progress-fill" ref="progress">
+            </div>
+          </div>
+          <div className="ppc-percents">
+            <div className="pcc-percents-wrapper">
+              <span> {percent + '%'} </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
   }
 });
 

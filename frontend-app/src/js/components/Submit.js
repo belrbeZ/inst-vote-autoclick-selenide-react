@@ -10,13 +10,10 @@ var SubmitElement = React.createClass({
     });
     var label = done ? 'Submit Now!' : 'You Cannot Yet!';
     return (
-      < div;
-    className = "form--group" >
-      < button;
-    type = "submit";
-    className = {classes} > {label} < /button>
-      < /div>;;
-  )
+      <div className="form--group">
+        <button type="submit" className={classes}> {label} </button>
+      </div>
+    )
   }
 });
 

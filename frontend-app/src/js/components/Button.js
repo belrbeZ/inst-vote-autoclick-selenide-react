@@ -7,14 +7,10 @@ var ButtonElement = React.createClass({
       'form--submit': true
     });
     return (
-      < div;
-    className = "form--group" >
-      < button;
-    type = "submit";
-    className = {classes};
-    onClick = {this._onClick} > {this.props.label} < /button>
-      < /div>;;
-  )
+      <div className="form--group">
+        <button type="submit" className={classes} onClick={this._onClick}> {this.props.label} </button>
+      </div>
+    )
   },
   _onClick: function (e) {
     if (e !== undefined && e != null) {

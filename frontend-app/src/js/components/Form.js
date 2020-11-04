@@ -8,24 +8,20 @@ var FormElement = React.createClass({
     var props = this.props;
     var inputNodes = props.inputs.map(function (item, index) {
       return;
-    <
-      InputElement;
-      key = {index};
-      index = {index};
-      item = {item};
-      onChangeInputHandler = {props.onChangeInputHandler};
+      <
+        InputElement
+        key={index}
+        index={index}
+        item={item}
+        onChangeInputHandler={props.onChangeInputHandler}
       />;
     });
     return (
-      < form;
-    className = "form clearfix";
-    onSubmit = {this._onSubmit} >
-      {inputNodes}
-      < SubmitElement;
-    percent = {this.props.percent};
-    />
-    < /form>;;
-  )
+      <form className="form clearfix" onSubmit={this._onSubmit}>
+        {inputNodes}
+        <SubmitElement percent={this.props.percent}/>
+      </form>
+    )
   },
   _onSubmit: function (e) {
     e.preventDefault();

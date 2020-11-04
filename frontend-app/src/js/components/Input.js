@@ -9,23 +9,17 @@ var InputElement = React.createClass({
       "has--error": item.hasError && !item.pristine
     });
     return (
-      < div;
-    className = {classes} >
-      < label;
-    htmlFor = {item.id} > {item.label} < /label>
-      < input;
-    type = "text";
-    className = "form--control";
-    id = {item.id};
-    value = {item.value};
-    onChange = {this._onChange};
-    />
-    < span;
-    className = "form--focus" > < /span>
-      < span;
-    className = "form--error" > {item.errorMessage} < /span>
-      < /div>;;
-  )
+      <div className={classes}>
+        <label htmlFor={item.id}> {item.label} </label>
+        <input type="text"
+               className="form--control"
+               id={item.id}
+               value={item.value}
+               onChange={this._onChange}/>
+        <span className="form--focus"> </span>
+        <span className="form--error"> {item.errorMessage} </span>
+      </div>
+    )
   },
   _onChange: function (e) {
     var value = e.target.value;

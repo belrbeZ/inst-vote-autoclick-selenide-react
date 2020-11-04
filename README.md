@@ -1,7 +1,8 @@
 #### VoteClick
-## Autotest App
+## App for Voi=ting in Social Voter resource
 
-This is Spring Boot app to provide smoke tests for another services. 
+The goal of this app is to imitate user actions in social media voter site to reach poits for voting.
+Inside this is a Spring Boot app that usese smoke-tests approach of another services. 
 There is no communication and database. 
 It provide core functions for initializing and implementing auto-tests by selenium framework.
 

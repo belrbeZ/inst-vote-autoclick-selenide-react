@@ -1,0 +1,20 @@
+{
+  "votersData": {
+    "SOCGRESS": [
+      {
+        "user": {
+          "login": "bel***",
+          "password": "***"
+        },
+        "accounts": {
+          "INSTAGRAM": [
+            {
+              "username": "vote***",
+              "password": "***"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -28,7 +28,7 @@
         <library.slf4j>1.7.25</library.slf4j>
         <swagger-codegen-base-package>com.belrbez.dev.api</swagger-codegen-base-package>
         <springfox-version>2.5.0</springfox-version>
-        <jackson-version>2.8.4</jackson-version>
+        <jackson-version>2.9.8</jackson-version>
     </properties>
 
     <dependencies>

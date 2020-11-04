@@ -1,5 +1,5 @@
 #### VoteClick
-## App for Voi=ting in Social Voter resource
+## App for Voting in Social Voter resource
 
 The goal of this app is to imitate user actions in social media voter site to reach poits for voting.
 Inside this is a Spring Boot app that usese smoke-tests approach of another services. 
@@ -16,14 +16,8 @@ Although Java is the main technology used for the software, a couple of librarie
 ##Setup a local development environment
 It is a Maven project, you can simply open it via Eclipse or IDEA, configure start of spring boot application. Change default configuration parameters, in /resources/application.properties
 
-## Component flow
-![Component diagram]
-
-## Configuration
-  ###To build component run:
-      mvn clean test
+## Build
+To build component run:\
+      `mvn clean test` 
 ## Current limitations:
-
-## Examples
-
-
+Work with one Voter Resource

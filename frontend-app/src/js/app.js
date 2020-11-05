@@ -4,7 +4,45 @@ var classSet = require('./utils/classSet');
 var ProgressElement = require('./components/Progress');
 var FormElement = require('./components/Form');
 var ButtonElement = require('./components/Button');
-var inputDatas = require('./datas/inputDatas');
+
+const datas = [
+  {
+    id: "Loops to repeat voting for Social network (i.e. Insta) *not implemented*",
+    label: "loopsOfSocial",
+    value: "",
+    validation: {
+      rules: {loopsOfSocial: ["integer"]},
+      messages: {'integer.loopsOfSocial': 'Only Integer!'}
+    },
+    pristine: true,
+    hasError: false,
+    errorMessage: ''
+  },
+  {
+    id: "Loops for launching Task type (i.e. Like, Subs etc.)",
+    label: "loopsOfTaskType",
+    value: "",
+    validation: {
+      rules: {loopsOfTaskType: ["required", "integer"]},
+      messages: {"required.loopsOfTaskType": 'Required!', 'integer.loopsOfTaskType': 'Only Integer!'}
+    },
+    pristine: true,
+    hasError: false,
+    errorMessage: ''
+  },
+  {
+    id: "Num of repeats for searching for tasks",
+    label: "loopsOfTaskList",
+    value: "",
+    validation: {
+      rules: {loopsOfTaskList: ["required", "integer"]},
+      messages: {"required.loopsOfTaskList": 'Required!', 'integer.loopsOfTaskList': 'Integer!'}
+    },
+    pristine: true,
+    hasError: false,
+    errorMessage: ''
+  }
+];
 
 var Content = React.createClass({
   getInitialState: function () {
@@ -127,4 +165,4 @@ var Content = React.createClass({
   }
 });
 
-React.render(<Content inputDatas={inputDatas}/>, document.body);
+React.render(<Content inputDatas={datas}/>, document.body);

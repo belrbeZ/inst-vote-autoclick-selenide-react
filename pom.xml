@@ -22,7 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <plugin.compiler>3.7.0</plugin.compiler>
         <plugin.surefire>2.19.1</plugin.surefire>
-        <library.junit>4.12</library.junit>
+        <library.junit>4.13.1</library.junit>
         <library.selenium.java>3.7.0</library.selenium.java>
         <library.selenide>4.14.2</library.selenide>
         <library.slf4j>1.7.25</library.slf4j>
